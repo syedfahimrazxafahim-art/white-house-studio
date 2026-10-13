@@ -1,0 +1,160 @@
+export interface PhotoItem {
+  id: string;
+  url: string;
+  title: string;
+  category: 'ceremony' | 'portraits' | 'details' | 'atmosphere';
+  caption: string;
+  aspectRatio?: 'landscape' | 'portrait' | 'square';
+}
+
+export const STUDIO_DETAILS = {
+  name: 'White House studio',
+  tagline: 'Luxury Wedding Photography',
+  location: 'New York',
+  phone: '66 83 901 2687',
+  phoneTel: '+66839012687',
+  email: 'pharadeen.90@gmail.com',
+  facebook: 'https://www.facebook.com/white.house.studio.p',
+  instagram: 'https://www.instagram.com/white_house.p',
+  logoUrl: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852800/476238696_122189448716247751_2875083733551945440_n.jpg',
+  heroBackgroundUrl: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791848631/757dc181-eba7-4044-8b06-7da559d89871.png',
+};
+
+export const PORTFOLIO_PHOTOS: PhotoItem[] = [
+  {
+    id: 'photo-1',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852802/689856009_122265201164247751_1519988440695563323_n.jpg',
+    title: 'Editorial Ceremony Portrait',
+    category: 'portraits',
+    caption: 'Quiet intimacy captured in warm monochrome lighting, highlighting the gown and authentic emotion.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-2',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852802/818491890_17907938244490459_5771278054743782137_n.jpg',
+    title: 'The Unspoken Glance',
+    category: 'ceremony',
+    caption: 'A candid instant during the exchange of vows, framed with natural directional light.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-3',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852802/655279626_17881343232490459_3690439187809232487_n.jpg',
+    title: 'The Veil & Silhouette',
+    category: 'portraits',
+    caption: 'Soft diffused backlight framing the bride with ethereal veil movement.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-4',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852802/819146620_17907938151490459_2122054225148768658_n.jpg',
+    title: 'Timeless Union',
+    category: 'ceremony',
+    caption: 'Sincere tenderness captured in a timeless editorial composition.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-5',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852802/656268512_17881343106490459_2209307529084012071_n.jpg',
+    title: 'Fine Art Embrace',
+    category: 'portraits',
+    caption: 'Subtle expressions and deep shadows creating an enduring visual memory.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-6',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852803/688911492_122265200696247751_6677651562036722581_n.jpg',
+    title: 'Architectural Elegance',
+    category: 'atmosphere',
+    caption: 'Clean geometric lines balancing human emotion and spatial grandeur.',
+    aspectRatio: 'landscape',
+  },
+  {
+    id: 'photo-7',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852805/691022392_122265201920247751_3089648094949483153_n.jpg',
+    title: 'Graceful Motion',
+    category: 'atmosphere',
+    caption: 'Fluid gown drape and gentle choreography in a quiet moment away from guests.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-8',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852805/819828439_17907938187490459_4028310259905292333_n.jpg',
+    title: 'Golden Hour Vows',
+    category: 'ceremony',
+    caption: 'Warm ambient sunlight framing the couple against the open horizon.',
+    aspectRatio: 'landscape',
+  },
+  {
+    id: 'photo-9',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852805/711786793_17891684028490459_697736839064265392_n.jpg',
+    title: 'Editorial Bridal Close-Up',
+    category: 'details',
+    caption: 'Intricate couture textures, jewelry craftsmanship, and quiet anticipation.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-10',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852805/820973870_17907938088490459_3391469497948793798_n.jpg',
+    title: 'Joy in Motion',
+    category: 'ceremony',
+    caption: 'Unfiltered laughter and exhilaration walking down the aisle hand in hand.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-11',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852806/719885508_122269052480247751_7165483251062147855_n.jpg',
+    title: 'Twilight Reception Reverie',
+    category: 'atmosphere',
+    caption: 'Candelit celebration and ambient romance as evening falls.',
+    aspectRatio: 'landscape',
+  },
+  {
+    id: 'photo-12',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852806/793867478_17907938235490459_1932469661869223885_n.jpg',
+    title: 'The First Dance',
+    category: 'atmosphere',
+    caption: 'Swirling drapery and shared connection under soft spotlighting.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-13',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852806/711925642_17891683989490459_5364306184018731249_n.jpg',
+    title: 'Heirloom Rings & Florals',
+    category: 'details',
+    caption: 'Fine-art still life celebrating the crafted heirlooms of the wedding day.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-14',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852806/715277462_17891684100490459_3181595668506428083_n.jpg',
+    title: 'The Veil Cascade',
+    category: 'details',
+    caption: 'Delicate lace embroidery and soft natural texture caught in gentle breeze.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-15',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852806/810623443_17907938001490459_7688073611159034611_n.jpg',
+    title: 'Stolen Moments',
+    category: 'portraits',
+    caption: 'Private whisper before stepping out to rejoin family and guests.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-16',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852807/818491891_17907938268490459_2686778844598740008_n.jpg',
+    title: 'The Vow Exchange',
+    category: 'ceremony',
+    caption: 'Unrehearsed sincerity as promises are spoken in presence of loved ones.',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 'photo-17',
+    url: 'https://res.cloudinary.com/fzobzdco/image/upload/v1791852811/711642936_17891683956490459_3380568047282150359_n.jpg',
+    title: 'Tableau of Celebration',
+    category: 'details',
+    caption: 'Atmospheric reception table setting with floral curation and hand-calligraphed paper.',
+    aspectRatio: 'portrait',
+  },
+];
